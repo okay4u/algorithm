@@ -1,0 +1,117 @@
+Q1.
+	Query all columns for all American cities in the CITY table with populations larger than 100000. 
+	The CountryCode for America is USA.
+
+	The CITY table is described as follows:
+
+A1.
+	SELECT
+		*
+	FROM
+		CITY
+	WHERE 	
+		COUNTRYCODE = 'USA' 
+		AND
+		POPULATION >= 100000;
+
+POINT.
+	QUERY ALL COULMUNS 모든 열
+
+-----------------------------------------------------------------------------------------------------------
+
+Q2.
+	Query the NAME field for all American cities in the CITY table with populations larger than 120000. The CountryCode for America is USA.
+
+	The CITY table is described as follows:
+
+A2.
+	SELECT 
+	    NAME
+	FROM
+	    CITY
+	WHERE 
+	    COUNTRYCODE = 'USA'
+	    AND
+	    POPULATION >= 120000;
+
+POINT.
+	QUERY NAME 특정 열
+
+
+-----------------------------------------------------------------------------------------------------------
+
+Q3. SELECT ALL
+	Query all columns (attributes) for every row in the CITY table.
+
+	The CITY table is described as follows:
+
+A3.
+	SELECT 
+		*
+	FROM 
+		CITY;
+
+POINT.
+	all columns (attributes) for every row 모든 열 , 모든 행 
+
+-----------------------------------------------------------------------------------------------------------
+
+Q4. JAPANESE CITIE'S Attributes
+	Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.
+
+	The CITY table is described as follows:
+
+A4.
+    SELECT 
+        *
+    FROM 
+        CITY
+    WHERE       
+        COUNTRYCODE = 'JPN';
+
+
+POINT.
+	SELECT * (CITIE'S Attributes 모든 속성 조회)
+	
+-----------------------------------------------------------------------------------------------------------
+
+Q5. JAPANESE CITIE'S NAME
+	Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.
+
+	The CITY table is described as follows:
+
+A5.
+    SELECT 
+        NAME
+    FROM 
+        CITY
+    WHERE       
+        COUNTRYCODE = 'JPN';
+
+
+POINT.
+	SELECT NAME (CITIE'S NAME 특정속성 조회)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
