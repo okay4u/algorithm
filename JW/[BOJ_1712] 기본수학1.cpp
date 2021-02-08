@@ -1,27 +1,28 @@
+// BOJ 1712 손익분기점  
 #include<cstdio>
  
-int main(void){
+int main(){
 	
 	int a,b,c;	
 	scanf("%d %d %d",&a,&b,&c);
 	
-	int rst = a + (b);
-	int rst2 = c;
-	int x = 0;
 	
 	if(b >= c){
 		printf("-1");
 		return 0;
 	}else{
-			
-		while(rst2<rst){
+
+		int sales, cost, x;
+		sales = 0;
+		cost = a;
+		x = 0;
+		while(sales<=cost){
 			x++;
-			rst = a + (b * x);
-			rst2 = c * x;			
-		}
-		printf("%d",x+1);		
+			sales = c*x;
+			cost = a + b*x;		
+		}		
+		printf("%d",x+1);	
+			
 	}
 	return 0;	
 }
-
-
