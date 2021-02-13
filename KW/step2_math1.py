@@ -2,7 +2,7 @@ from math import floor
 
 # a:고정비용, b:가변비용, c:판매가격
 def math_1712(a,b,c):
-    return -1 if a/(c-b) < 0 else floor(a/(c-b)+1)
+    return -1 if c <= b else floor(a/(c-b)+1)
 
 # x>= (v-b)/(a-b)
 def math_2869(a, b, v):
