@@ -2,7 +2,8 @@ package DH;
 
 import java.util.Scanner;
 
-public class math1_2869
+
+public class math1_2869 // * 시간초과
 {
     
     // main 메소드

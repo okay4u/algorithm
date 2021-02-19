@@ -65,7 +65,7 @@ import java.util.Map;
 
 */
 
-class max_cnt_str1
+class String_max_cnt_str1
 {
     // 상태,속성 (필드)
     // String input_str;

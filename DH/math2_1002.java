@@ -1,9 +1,9 @@
 package DH;
 
 
-class str_cnt
+class String_1002
 {
-    static int get_str_cnt( String usr_str ){
+    static int math2_1002( String usr_str ){
         int result = 0;
 
         if( usr_str.length() < 1000000 && usr_str.length() > 0  ){ 
@@ -18,7 +18,7 @@ class str_cnt
     public static void main (String[] args)
     {
         System.out.println("start");
-        get_str_cnt( "asd asda asd asd " );
+        math2_1002( "asd asda asd asd " );
 
     }
 }

@@ -1,0 +1,84 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch String_1002",
+            "request": "launch",
+            "mainClass": "DH.String_1002",
+            "projectName": "Algorithm_255f05f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch String_1152",
+            "request": "launch",
+            "mainClass": "DH.String_1152",
+            "projectName": "Algorithm_255f05f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch String_2581",
+            "request": "launch",
+            "mainClass": "DH.String_2581",
+            "projectName": "Algorithm_255f05f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch String_2941",
+            "request": "launch",
+            "mainClass": "DH.String_2941",
+            "projectName": "Algorithm_255f05f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch String_max_cnt_str1",
+            "request": "launch",
+            "mainClass": "DH.String_max_cnt_str1",
+            "projectName": "Algorithm_255f05f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch math1_10250",
+            "request": "launch",
+            "mainClass": "DH.math1_10250",
+            "projectName": "Algorithm_255f05f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch math1_1712",
+            "request": "launch",
+            "mainClass": "DH.math1_1712",
+            "projectName": "Algorithm_255f05f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch math1_2839",
+            "request": "launch",
+            "mainClass": "DH.math1_2839",
+            "projectName": "Algorithm_255f05f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch math1_2869",
+            "request": "launch",
+            "mainClass": "DH.math1_2869",
+            "projectName": "Algorithm_255f05f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch max_cnt_str2",
+            "request": "launch",
+            "mainClass": "DH.max_cnt_str2",
+            "projectName": "Algorithm_255f05f6"
+        }
+    ]
+}

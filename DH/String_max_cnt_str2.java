@@ -9,7 +9,7 @@ import java.util.Map;
 
 class max_cnt_str2
 {
-    static String get_max_cnt_str( String usr_str ){
+    static String String_max_cnt_str2( String usr_str ){
         String result_str = "";
         char[] char_array;
         Map<String, Integer> cnt_map = new HashMap<>();  
@@ -85,7 +85,7 @@ class max_cnt_str2
     public static void main (String[] args)
     {
         System.out.println("start");
-        get_max_cnt_str( "asdasdasdasdasd" );
+        String_max_cnt_str2( "asdasdasdasdasd" );
 
     }
 }
