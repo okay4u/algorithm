@@ -40,3 +40,18 @@ def math_1002(x1, y1, r1, x2, y2, r2):
     if abs(r1+r2) == d or abs(r1-r2) == d:
         return 1   
     return 0
+
+
+# def math_1002(x1, y1, r1, x2, y2, r2):
+#     d = sqrt((x1-x2)**2 + (y1-y2)**2)
+
+#     if abs(r1-r2) < d and d < r1+r2:
+#         return 2
+
+#     if r1+r2 == d or abs(r1-r2) == d:
+#         return 1
+
+#     if x1 == x2 and y1 == y2 and r1 == r2:
+#         return -1
+
+#     return 0
