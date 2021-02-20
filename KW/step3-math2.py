@@ -51,7 +51,7 @@ def math_1002(x1, y1, r1, x2, y2, r2):
 #     if r1+r2 == d or abs(r1-r2) == d:
 #         return 1
 
-#     if x1 == x2 and y1 == y2 and r1 == r2:
+#     if d ==0 and r1 == r2:
 #         return -1
 
 #     return 0
