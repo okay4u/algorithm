@@ -1,6 +1,5 @@
 import heapq
 import copy
-import sys
 
 def solution(k, n, primes):
     my_heap = copy.deepcopy(primes)
