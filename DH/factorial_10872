@@ -14,9 +14,8 @@ public class Main {
     System.out.print(ans);
   }
 
-  //재귀함수
+
   static void factorial(int num) {
-    //0과 1일 땐 ans에 영향을 주지 않음
     if (num != 1 && num != 0) {
       ans = ans * num;
       num--;
