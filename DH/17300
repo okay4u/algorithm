@@ -1,0 +1,34 @@
+
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main_12100 {
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();   // 크기
+        int[][] pan = new int[n][n];
+
+        for( int i = 0; i < n; i++ ){
+            String[] tmp = sc.next().split(" "); // s집합 원소
+            for( int j = 0; j < n; j++ ){
+                pan[i][j] = Integer.parseInt(tmp[j]);
+            };
+        };
+
+       // 좌 일경우a
+        for( int i = 0; i < pan.length; i++ ){
+            List rst = new ArrayList<Integer>;// 리스트1 _ rst
+            List joa = new ArrayList<Integer>;// 리스트2 - input
+
+            for( int j = 0;  < joa.length; j++ ){
+                joa
+            }
+        };
+        // 우 일경우
+
+    }
+}
