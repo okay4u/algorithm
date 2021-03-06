@@ -28,3 +28,47 @@ if __name__ == '__main__':
     S = [10, 20, 30, 40, 50]
     n = 30
     print(brute_1059(S, len(S), n))
+
+###################################################################################
+
+def brute_12100(board, cnt):
+    if cnt == 0:
+        res = 0
+        for i in range(len(board)):
+            res = max(max(map(int,board[i])), res)
+        return res
+        # return max(max(board))
+    move_board(board, 'L')
+
+def move_board(board, direction):
+    if direction == 'T':
+        pass
+    if direction == 'B':
+        pass
+    if direction == 'R':
+
+    if direction == 'L':
+        for i in range(len(board)):
+            non_zero = 0
+            while non_zero < len(board[i]):
+                if board[i][non_zero] != 0:
+                    break
+                else:
+                    non_zero += 1
+            board[i] = board[i][non_zero:] + [i]*non_zero
+
+            for j in range(len(board[i])-1):
+                if board[i][j] == 0:
+                    board[i][j] = board[i][j+1]
+                    board[i][j+1] = 0
+                if board[i][j] == board[i][j+1]:
+                    board[i][j] *= 2
+                    board[i][j+1] = 0
+if __name__ == '__main__':
+    arr = [
+        [0, 2, 2],
+        [4, 4, 4],
+        [8, 8, 8]
+    ]
+    # print(arr[0][1:] + [0])
+    print(brute_12100(arr, 1))
