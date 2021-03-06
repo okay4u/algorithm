@@ -38,7 +38,10 @@ def brute_12100(board, cnt):
             res = max(max(map(int,board[i])), res)
         return res
         # return max(max(board))
-    move_board(board, 'L')
+    brute_12100(move_board(board, 'B'), cnt-1)
+    brute_12100(move_board(board, 'T'), cnt-1)
+    brute_12100(move_board(board, 'B'), cnt-1)
+    brute_12100(move_board(board, 'T'), cnt-1)
 
 def move_board(board, direction):
     if direction == 'T':
@@ -46,7 +49,7 @@ def move_board(board, direction):
     if direction == 'B':
         pass
     if direction == 'R':
-
+        pass
     if direction == 'L':
         for i in range(len(board)):
             non_zero = 0
@@ -64,6 +67,7 @@ def move_board(board, direction):
                 if board[i][j] == board[i][j+1]:
                     board[i][j] *= 2
                     board[i][j+1] = 0
+    return board
 if __name__ == '__main__':
     arr = [
         [0, 2, 2],
