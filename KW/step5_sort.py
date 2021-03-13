@@ -74,5 +74,34 @@ def move_board(board, direction):
   
   
   ################################################################################################################
-  
-  
+
+import sys
+
+def sort_10989():
+    histogram = [0]*(10000+1)
+
+    for i in range(a):
+        histogram[int(sys.stdin.readline())] += 1
+    for i in range(len(histogram)):
+        for j in range(histogram[i]):
+            print(i)
+        
+def sort_2108(numbers):
+    answer = [] # 평균, 중앙, 최빈, 범위
+    numbers.sort()
+    answer.append(round(sum(numbers)/len(numbers)))    # 평균
+    answer.append(numbers[len(numbers)//2])     # 중앙
+
+    cnt = collections.Counter(numbers)
+    common_cnt = max(cnt.values())
+    cand = list(filter(lambda x : True if cnt[x] == common_cnt else False, cnt))
+    cand.sort()
+    if len(cand) > 1 :
+        answer.append(cand[1])
+    else:
+        answer.append(cand[0])
+    
+    answer.append(numbers[-1] - numbers[0])
+    
+    return answer
+        
