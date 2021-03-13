@@ -1,0 +1,32 @@
+package algoJava;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Stream;
+
+public class Main_10989 {
+
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int n = Integer.parseInt( sc.nextLine().trim() );           // 크기
+        int[] arr = new int[10000001];  // 정렬배열
+        //List rstList = new ArrayList();         // 결과배열
+
+        for( int i = 0; i < n; i++ ){
+            int idx = Integer.parseInt( sc.nextLine().trim() );
+            arr[idx] = idx;
+        };
+
+        Arrays.stream( arr ).forEach(
+                a -> {
+                    if( a != 0 ){
+                        System.out.println(a);
+                    }
+                }
+        ); // foreach 상위 api문서로 객체 확인.
+
+    }
+}
